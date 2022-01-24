@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(!et3.getText().toString().isEmpty()) //check whether editview is empty or not
                 tip=Float.parseFloat(et3.getText().toString());
                 numOfPeople = Integer.parseInt(et2.getText().toString());
                 billAmount= Float.parseFloat(et1.getText().toString());
